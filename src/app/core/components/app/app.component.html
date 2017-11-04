@@ -1,1 +1,14 @@
-<h1>Enery helper</h1>
+<div class="app flex-container" fxLayout="column" fxLayoutAlign="start stretch">
+  <mat-toolbar class="mat-elevation-z6 header" color="primary">
+    <button mat-icon-button (click)="appSidenav.toggle">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Energy Helper</span>
+    <span class="app-spacer"></span>
+  </mat-toolbar>
+  <mat-menu #appMenu>
+    <button mat-menu-item>
+      <span>Log out</span>
+    </button>
+  </mat-menu>
+</div>

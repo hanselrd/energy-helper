@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent, CoreModule } from '@app/core';
+import { SharedModule } from '@app/shared';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { AppComponent, CoreModule } from '@app/core';
   ],
   imports: [
     BrowserModule,
-    CoreModule
+    CoreModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
