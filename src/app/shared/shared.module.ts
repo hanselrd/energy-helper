@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from '@app/material';
 
+import { AboutUsDialogComponent } from './components/footer/about-us-dialog/about-us-dialog.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PageComponent } from './components/page/page.component';
@@ -18,10 +19,14 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     MaterialModule
   ],
   declarations: [
+    AboutUsDialogComponent,
     FooterComponent,
     HeaderComponent,
     PageComponent,
     SidenavComponent
+  ],
+  entryComponents: [
+    AboutUsDialogComponent
   ],
   exports: [
     ReactiveFormsModule,
