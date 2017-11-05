@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Would you like to log in?</h2>
+<mat-dialog-content>
+  <div class="text-center">
+    <p>
+      <button mat-raised-button mat-dialog-close color="primary" (click)="authService.googleLogIn()">
+        <i class="fa fa-google fa-lg"></i>
+        <span>Log in using Google</span>
+      </button>
+    </p>
+    <p>
+      <button mat-raised-button mat-dialog-close color="primary" (click)="authService.facebookLogIn()">
+        <i class="fa fa-facebook fa-lg"></i>
+        <span>Log in using Facebook</span>
+      </button>
+    </p>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>
+    <span>CANCEL</span>
+  </button>
+</mat-dialog-actions>

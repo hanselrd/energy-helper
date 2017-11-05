@@ -1,4 +1,7 @@
 <app-page title="Home" subtitle="Welcome to our Hack AE submission!">
+  <div *ngIf="(authService.authState | async)">
+    <img src="{{ (authService.user.data | async)?.providers[0].photoURL }}" alt="Profile Photo">
+  </div>
   <p>
     <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique veniam odio possimus nisi ex maiores quibusdam voluptatem, reprehenderit suscipit reiciendis officiis unde enim quidem libero ratione culpa vero ipsam accusantium?</span>
     <span>Beatae voluptatibus porro nisi tenetur omnis reprehenderit est. Explicabo cum iste modi repellendus obcaecati. Natus dicta accusamus ducimus distinctio quod ipsa, expedita ab voluptas sed eveniet modi possimus provident reiciendis!</span>

@@ -7,7 +7,6 @@ import { routes } from './routes';
 import { SharedModule } from '@app/shared';
 
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   imports: [
@@ -16,8 +15,7 @@ import { LoginComponent } from './components/login/login.component';
     SharedModule
   ],
   declarations: [
-    HomeComponent,
-    LoginComponent
+    HomeComponent
   ],
   exports: [
     RouterModule
