@@ -48,7 +48,7 @@ export class StatisticsComponent implements OnInit {
   displayedColumns = ['date', 'kwh', 'total'];
 
   constructor(private afs: AngularFirestore,
-              private authService: AuthService,
+              public authService: AuthService,
               private dialog: MatDialog) {
     this.dataSource = new BillsDataSource(this.afs, this.authService);
   }
