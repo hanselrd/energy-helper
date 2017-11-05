@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from '@app/material';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
