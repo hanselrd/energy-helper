@@ -8,6 +8,7 @@ import { MaterialModule } from '@app/material';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PageComponent } from './components/page/page.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { PageComponent } from './components/page/page.component';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    PageComponent
+    PageComponent,
+    SidenavComponent
   ],
   exports: [
     ReactiveFormsModule,
@@ -27,7 +29,8 @@ import { PageComponent } from './components/page/page.component';
     MaterialModule,
     FooterComponent,
     HeaderComponent,
-    PageComponent
+    PageComponent,
+    SidenavComponent
   ]
 })
 export class SharedModule { }
