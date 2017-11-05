@@ -5,6 +5,10 @@ import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from '@app/material';
 
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PageComponent } from './components/page/page.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -12,11 +16,18 @@ import { MaterialModule } from '@app/material';
     RouterModule,
     MaterialModule
   ],
-  declarations: [],
+  declarations: [
+    FooterComponent,
+    HeaderComponent,
+    PageComponent
+  ],
   exports: [
     ReactiveFormsModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    FooterComponent,
+    HeaderComponent,
+    PageComponent
   ]
 })
 export class SharedModule { }
