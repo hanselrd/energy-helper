@@ -7,6 +7,8 @@ import { routes } from './routes';
 import { SharedModule } from '@app/shared';
 
 import { HomeComponent } from './components/home/home.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { TipsComponent } from './components/tips/tips.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './components/home/home.component';
     SharedModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    StatisticsComponent,
+    TipsComponent
   ],
   exports: [
     RouterModule

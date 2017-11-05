@@ -1,5 +1,11 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button routerLink="/stats" matTooltip="Statistics">
-    <mat-icon>monetization_on</mat-icon>
+  <button mat-button routerLink="/home">
+    <span>Home</span>
+  </button>
+  <button *ngIf="(authService.authState | async)" mat-button routerLink="/statistics">
+    <span>Statistics</span>
+  </button>
+  <button mat-button routerLink="/tips">
+    <span>Tips</span>
   </button>
 </mat-toolbar>
