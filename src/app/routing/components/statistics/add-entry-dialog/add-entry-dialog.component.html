@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Add Entry</h2>
+<mat-dialog-content>
+  <form [formGroup]="addEntryForm" (ngSubmit)="onSubmit()">
+    <p>
+      <mat-form-field class="app-full-width">
+        <input matInput formControlName="date" [matDatepicker]="picker" placeholder="Date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="date.errors?.matDatepickerParse">
+          Please enter a valid date
+        </mat-error>
+        <mat-error *ngIf="!date.errors?.matDatepickerParse && date.errors?.required">
+          Date is required
+        </mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field class="app-full-width">
+        <input matInput formControlName="kwh" type="number" placeholder="kWh">
+        <mat-hint>
+          If you're not sure, you can enter 0
+        </mat-hint>
+        <mat-error *ngIf="kwh.errors?.required">
+          kWh is required
+        </mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field class="app-full-width">
+        <input matInput formControlName="total" type="number" placeholder="Total">
+        <mat-error *ngIf="total.errors?.required">
+          Total is required
+        </mat-error>
+      </mat-form-field>
+    </p>
+    <p hidden>
+      <button [disabled]="addEntryForm.invalid"></button>
+    </p>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onSubmit()" [disabled]="addEntryForm.invalid">Submit</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

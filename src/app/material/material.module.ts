@@ -4,12 +4,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatButtonModule,
   MatCardModule,
+  MatDatepickerModule,
   MatDialogModule,
   MatGridListModule,
   MatIconModule,
   MatInputModule,
   MatMenuModule,
+  MatNativeDateModule,
+  MatSelectModule,
   MatSidenavModule,
+  MatTableModule,
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
@@ -23,12 +27,16 @@ import {
     FlexLayoutModule,
     MatButtonModule,
     MatCardModule,
+    MatDatepickerModule,
     MatDialogModule,
     MatGridListModule,
     MatIconModule,
     MatInputModule,
     MatMenuModule,
+    MatNativeDateModule,
+    MatSelectModule,
     MatSidenavModule,
+    MatTableModule,
     MatToolbarModule,
     MatTooltipModule
   ]

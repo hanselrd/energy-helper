@@ -6,6 +6,7 @@ import { routes } from './routes';
 
 import { SharedModule } from '@app/shared';
 
+import { AddEntryDialogComponent } from './components/statistics/add-entry-dialog/add-entry-dialog.component';
 import { AssistComponent } from './components/assist/assist.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -19,11 +20,15 @@ import { TipsComponent } from './components/tips/tips.component';
     SharedModule
   ],
   declarations: [
+    AddEntryDialogComponent,
     AssistComponent,
     HomeComponent,
     NotFoundComponent,
     StatisticsComponent,
     TipsComponent
+  ],
+  entryComponents: [
+    AddEntryDialogComponent
   ],
   exports: [
     RouterModule

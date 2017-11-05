@@ -4,9 +4,9 @@ import { MatDialog } from '@angular/material';
 
 import { Observable } from 'rxjs/Observable';
 
-import { LoginDialogComponent } from './login-dialog/login-dialog.component';
-
 import { AuthService } from '../../services/auth/auth.service';
+
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 
 @Injectable()
 export class OptionalAuthGuard implements CanActivate {
